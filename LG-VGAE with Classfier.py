@@ -139,8 +139,7 @@ print("Illicit Precision:%.3f \nIllicit  Recall:%.3f \nIllicit F1 Score:%.3f" % 
 # ALL feature + embeddings
 # random_state = 781
 
-model_RF_hx = RandomForestClassifier(criterion='entropy', bootstrap=False, class_weight={0: 1, 1: 3}, n_estimators=140,
-                                     max_features=20, random_state=252).fit(X_train_hx, y_train)
+model_RF_hx = RandomForestClassifier().fit(X_train_hx, y_train)
 y_preds = model_RF_hx.predict(X_test_hx)
 #
 prec, rec, f1, num = precision_recall_fscore_support(y_test, y_preds, labels=[1, 0])
@@ -149,8 +148,7 @@ print("ALL feature + embeddings RandomForest Classifier")
 print("Illicit Precision:%.3f \nIllicit  Recall:%.3f \nIllicit F1 Score:%.3f" % (prec[0], rec[0], f1[0]))
 
 # %% Node embeddings
-model_NB_RF = RandomForestClassifier(class_weight={0: 1, 1: 3}, n_estimators=50, max_features=50).fit(X_train_h,
-                                                                                                      y_train)
+model_NB_RF = RandomForestClassifier().fit(X_train_h, y_train)
 y_preds = model_NB_RF.predict(X_test_h)
 
 prec, rec, f1, num = precision_recall_fscore_support(y_test, y_preds, labels=[1, 0])
