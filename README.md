@@ -1,5 +1,8 @@
 # LG-VGAE-A-Local-and-Global-Collaborative-Variational-Graph-Autoencoder
 LG-VGAE: A Local and Global Collaborative Variational Graph Autoencoder for Detecting Crypto Money Laundering
+
+This work has been accepted by the journal *Knowledge and Information Systems* on May 14, 2025.
+
 Abstract:
 Graph Neural Network (GNNs) have emerged as a promising method for anti-money laundering (AML) applications. However, existing semi-supervised GNN models often collaborate with downstream classifiers in a monotonous manner and tend to focus solely on local or global information. To address these limitations, we propose an unsupervised graph representation learning model called Local and Global Collaborative Variational Graph Autoencoder (LG-VGAE) for detecting cryptocurrency money laundering. Our model seamlessly integrates GNNs that concentrate on both local information and global structure into a unified framework. In experiments using the Elliptic dataset, the representation learned by LG-VGAE improves the Precision, Recall, and F1 Score of the Random Forest (RF) classifier by 3.7%, 7%, and 5.7%, respectively, achieving state-of-the-art results. The experimental results show that the proposed LG-VGAE can better capture financial anomalies and enhance the performance of downstream classifiers. The construction of this graph representation learning model provides a new way of introducing GNNs into AML.
 
